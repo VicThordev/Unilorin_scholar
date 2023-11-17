@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity">
+
+    <ImageView
+        android:layout_width="740dp"
+        android:layout_height="300dp"
+        android:foregroundGravity="center"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/logo_scholar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background_content_bottom"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textColor="@color/blue"
+                    android:id="@+id/welcome"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="25dp"
+                    android:textSize="26sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textColor="@color/blue"
+                    android:id="@+id/signUp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/welcome"
+                    android:layout_marginStart="15dp"
+                    android:textStyle="bold"
+                    android:textSize="40sp"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/signUp"
+                    tools:layout_editor_absoluteX="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="100dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="20dp">
+
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        android:id="@+id/imgSignUp"
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/backgroung_input"
+                                        android:scaleType="centerCrop"
+                                        app:riv_corner_radius="50dp" />
+
+                                    <TextView
+                                        android:id="@+id/txtSignUp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="Add a profile image"
+                                        android:textSize="12sp" />
+
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+
+                            <EditText
+                                android:id="@+id/txtSurname"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_account"
+                                android:drawablePadding="10dp"
+                                android:hint="Surname"
+                                android:layerType="software"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtSurnameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Surname cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/txtFirstName"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_account"
+                                android:drawablePadding="12dp"
+                                android:hint="First Name"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtFirstNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Firstname cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/Username"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_account"
+                                android:drawablePadding="10dp"
+                                android:hint="Pick a username"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtUsernameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Username cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/faculty"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_school"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/faculty"
+                                android:layerType="software"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtFacultyText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Faculty cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/department"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginTop="10dp"
+                                android:layerType="software"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_school"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/department"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtDepartmentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Department cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/txtMobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:textColor="@color/blue"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_dialpad"
+                                android:drawablePadding="10dp"
+                                android:hint="Mobile No:"
+                                android:inputType="number"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtMobileText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Mobile cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/txtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_mail"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/email"
+                                android:inputType="textEmailAddress"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtEmailText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Field is required"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/txtPassword"
+                                android:textColor="@color/blue"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="20dp"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_lock"
+                                android:drawablePadding="10dp"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtPasswordText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Surname cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/confirmPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:textColor="@color/blue"
+                                android:textColorHint="@color/blue"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:drawableStart="@drawable/ic_lock"
+                                android:drawablePadding="10dp"
+                                android:hint="Confirm Password"
+                                android:inputType="textPassword"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp" />
+
+                            <TextView
+                                android:id="@+id/txtConfirmPasswordText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="21dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Surname cannot be blank"
+                                android:textColor="#F80101"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:id="@+id/btnRegister"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/custom_input"
+                                android:text="REGISTER" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="80dp"
+                                    android:text="Have an account already?" />
+
+                                <TextView
+                                    android:id="@+id/signInstead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:text="Sign in instead"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+</RelativeLayout>

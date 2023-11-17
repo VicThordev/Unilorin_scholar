@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.folahan.unilorinscholar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/unilorin_logo_design"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/unilorin_logo_design"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UnilorinScholar">
+        <activity
+            android:name=".Activity.GP_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.Cropper_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CropImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Sta124Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Plb108Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Phy192Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Phy152Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Phy142Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Mth116Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Mth114Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Mth112Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Gns114Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Gns112Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Chm132Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Chm116Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l.Chm112Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Zly101Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Sta131Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Plb101Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Phy191Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Phy125Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Phy115Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Mth113Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Mth111Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Gns111Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Chm115Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.Chm101Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.SecondSemester100l"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Questions.FirstSemester100l.FirstSemesterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CheckLevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".Notification.FirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGE_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

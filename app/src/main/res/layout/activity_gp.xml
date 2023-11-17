@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GP_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scroll"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TableRow
+                android:background="@color/blue">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_ntitle"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c_unit"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Your  Score"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Points \n Obtained"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Obtainable \nPoints"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 1"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:id="@+id/cUnit1"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score1"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pointsObatained1"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:id="@+id/obtainablePoints1"
+                    android:padding="10sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 2"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:id="@+id/cUnit2"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score2"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:id="@+id/pointsObatained2"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Points will show here"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints2"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 3"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:id="@+id/cUnit3"
+                    android:inputType="number"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score3"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained3"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Points will show here"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints3"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 4"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:id="@+id/cUnit4"
+                    android:inputType="number"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score4"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained4"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:id="@+id/obtainablePoints4"
+                    android:padding="10sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 5"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:id="@+id/cUnit5"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score5"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints5"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 6"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:id="@+id/cUnit6"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score6"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained6"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints6"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 7"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:id="@+id/cUnit7"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score7"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained7"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints7"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 8"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Course \nUnit"
+                    android:id="@+id/cUnit8"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score8"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:id="@+id/pointsObatained8"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints8"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 9"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:id="@+id/cUnit9"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score9"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:id="@+id/pointsObatained9"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints9"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 10"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:id="@+id/cUnit10"
+                    android:padding="10sp"
+                    android:inputType="number"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score10"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained10"
+                    android:text="@string/points"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Points will show here"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints10"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 11"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:padding="10sp"
+                    android:id="@+id/cUnit11"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/score"
+                    android:id="@+id/score11"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:id="@+id/pointsObatained11"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:id="@+id/obtainablePoints11"
+                    android:padding="10sp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Course 12"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/c_unit"
+                    android:id="@+id/cUnit12"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Score"
+                    android:id="@+id/score12"
+                    android:inputType="number"
+                    android:padding="10sp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:id="@+id/pointsObatained12"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="@string/points" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:padding="10sp"
+                    android:id="@+id/obtainablePoints12"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"/>
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnClick"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="Calculate"
+            android:background="@color/blue"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnAdd"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="Add Course"
+            android:background="@color/blue"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/btnRemove"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Remove Course"
+            android:background="@color/blue"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
